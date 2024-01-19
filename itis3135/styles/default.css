@@ -1,0 +1,38 @@
+body{
+    background-color:thistle;
+    text-align: center;
+    color:rgb(38, 3, 54);
+    font-family:Garamond;
+}
+
+a{
+    color:rgb(169, 61, 126);
+    text-decoration: none; 
+}
+
+a:hover{
+    color:aliceblue;
+    text-decoration: line;
+}
+main{
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2{
+    text-align: center;
+}
+
+img{
+    width: 25%;
+
+}
+figure{
+    text-align: center;
+    font-style: italic;
+}
+
+div{
+    text-align: center;
+}
