@@ -23,6 +23,10 @@ h2{
     text-align: center;
 }
 
+h3{
+    text-align: center;
+}
+
 img{
     width: 45%;
 
@@ -35,3 +39,23 @@ figure{
 div{
     text-align: center;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .tables table.table2 tr:nth-child(odd) td{
+    background-color:rgb(242, 237, 242);
+}
+
+  .table2 th{
+    background-color:rgb(169, 61, 126);
+  }
