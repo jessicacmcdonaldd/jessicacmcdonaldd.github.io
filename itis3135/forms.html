@@ -31,23 +31,32 @@
         <h3>Interest Form</h3>
         <section class="form-questions">
             <form action="#">
-                <fieldset>
+                <fieldset class="information">
                     <legend><strong>Contact Information</strong></legend>
+                    <div>
                     <label>
-                        <span>Name *</span>
+                        <span>Name: </span>
                         <input type="text" name="customer-name" placeholder="Full Name" required size="20">
                     </label>
+                    </div>
+
+                    <div>
                     <label>
-                        <span>Phone # (optional)</span>
+                        <span>Phone: </span>
                         <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </label>
+                    </div>
+
+                    <div>
                     <label>
-                        <span>Email *</span>
+                        <span>Email: </span>
                         <input type="email" id="email" name="email" placeholder="Email" required>
                     </label>
+                    </div>
+
                 </fieldset>
                 <fieldset>
-                    <legend>Have you ever purchased from Jumping Monkey berfore?</legend>
+                    <legend><strong>Have you ever purchased from Jumping Monkey berfore?</strong></legend>
                     <label>
                        <input id="yes" type="radio" name="yes-no" value="Yes" checked>Yes
                     </label>
@@ -56,7 +65,7 @@
                     </label>
                 </fieldset>
                 <fieldset>
-                    <legend>How many Barrel of Monkeys are you interested in purchasing?</legend>
+                    <legend><strong>How many Barrel of Monkeys are you interested in purchasing?</strong></legend>
                     <label id="selection">Please select an option</label>
                     <select>
                         <option value="select">(select one)</option>
@@ -67,10 +76,8 @@
                     </select>
                 </fieldset>
                 <fieldset>
-                    <legend>What colors are you interested in?</legend>
-                    <label>
-                        <input type="checkbox" name="vantablack" id="vantablack" value="vantablack">Vantablack
-                    </label>
+                    <legend><strong>What colors are you interested in?</strong></legend>
+                    <label><input type="checkbox" name="vantablack" id="vantablack" value="vantablack">Vantablack</label>
                     <label>
                         <input type="checkbox" name="glaucous" id="glaucous" value="glaucous">Glaucous
                     </label>
@@ -85,7 +92,7 @@
                     </label>
                 </fieldset>
                 <fieldset>
-                    <legend>Submit/Reset</legend>
+                    <legend><strong>Submit/Reset</strong></legend>
                     <button type="submit" value="submit">Submit</button>
                     <button type="reset" value="reset">Reset</button>
                 </fieldset>
