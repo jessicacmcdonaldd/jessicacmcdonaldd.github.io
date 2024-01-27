@@ -59,3 +59,17 @@ table {
   .table2 th{
     background-color:rgb(169, 61, 126);
   }
+
+  .form-questions {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+fieldset{
+    border: 1.5px solid rgb(84, 83, 83);
+}
+
+button{
+    background-color:rgb(150, 67, 117); 
+    color:aliceblue;
+}

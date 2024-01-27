@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica McDonald's Jovial Monkey || ITIS3135 Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head> 
+<body>
+    <header>
+        <h1> Jessica McDonald's Jovial Monkey || ITIS 3135</h1>
+        <nav>
+            <a href="./">Home</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+            <a href="tables.html">Tables</a>
+            ||
+            <a href="forms.html">Forms</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Jumping Monkey Enterprises</h2>
+        <h3>Company Information</h3>
+        <ul>
+            <li>Phone #: (919)-799-3186</li>
+            <li>Email: jumpingmonkey@gmail.com</li>
+        </ul>
+        <h3>Interest Form</h3>
+        <section class="form-questions">
+            <form action="#">
+                <fieldset>
+                    <legend><strong>Contact Information</strong></legend>
+                    <label>
+                        <span>Name *</span>
+                        <input type="text" name="customer-name" placeholder="Full Name" required size="20">
+                    </label>
+                    <label>
+                        <span>Phone # (optional)</span>
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    </label>
+                    <label>
+                        <span>Email *</span>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Have you ever purchased from Jumping Monkey berfore?</legend>
+                    <label>
+                       <input id="yes" type="radio" name="yes-no" value="Yes" checked>Yes
+                    </label>
+                    <label>
+                        <input id="no" type="radio" name="yes-no" value="No">No
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>How many Barrel of Monkeys are you interested in purchasing?</legend>
+                    <label id="selection">Please select an option</label>
+                    <select>
+                        <option value="select">(select one)</option>
+                        <option value="company">Bulk/Company Size (8+)</option>
+                        <option value="party">Party size (5-7)</option>
+                        <option value="family">Family Size (2-4)</option>
+                        <option value="personal">Personal Size (1)</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>What colors are you interested in?</legend>
+                    <label>
+                        <input type="checkbox" name="vantablack" id="vantablack" value="vantablack">Vantablack
+                    </label>
+                    <label>
+                        <input type="checkbox" name="glaucous" id="glaucous" value="glaucous">Glaucous
+                    </label>
+                    <label>
+                        <input type="checkbox" name="gamboge" id="gamboge" value="gamboge">Gamboge
+                    </label>
+                    <label>
+                        <input type="checkbox" name="amaranth" id="amaranth" value="amaranth">Amaranth
+                    </label>
+                    <label>
+                        <input type="checkbox" name="tyrian" id="tyrian" value="tyrian">Tyrian Purple
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Submit/Reset</legend>
+                    <button type="submit" value="submit">Submit</button>
+                    <button type="reset" value="reset">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/jmcdon53/">Charlotte.edu</a>
+            ||
+            <a href="http://github.com/jessicacmcdonaldd/jessicacmcdonaldd.github.io">Github</a>
+            ||
+            <a href="https://jessicacmcdonaldd.github.io/itis3135/">Github.io</a>
+            ||
+            <a href="https://www.freecodecamp.org/jessicamcdonald">freeCodeCamp</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/jessicamcdonald">Codecademy</a>
+            ||
+            <a href="https://www.linkedin.com/in/jessica-mcdonald-c/">LinkedIn</a>
+        </nav>
+
+        <p>Page Built by <a href="jumpingmonkey.com/">Jumping Monkey Enterprises</a>&copy; 2023 </p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px"
+            src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a> 
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+</body>
+</html>
