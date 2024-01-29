@@ -90,5 +90,10 @@ input.information {
     margin: 0.5rem 0;
   }
   
+  .tabular{
+    margin: auto;
+    width: 53%;
+    padding: 10px;
+  }
 
   
