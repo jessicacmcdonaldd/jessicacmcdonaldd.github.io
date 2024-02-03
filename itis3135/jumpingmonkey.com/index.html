@@ -3,16 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUMPING MONKEY DESIGN PAGE</title>
+    <title>JUMPING MONKEY ENTERPRISES</title>
     <style>
+        img{
+            height: 60px; 
+            display: inline-block;
+            margin-left: 2.1%;
+        }
         body{
-            color:navy;
-            background-color:rgb(196, 234, 241);
+            color:#273C2C;
+            background-color:#E0D3DE;
+            font-family:Garamond;
+        }
+        .daheader{
             text-align: center;
         }
+        .headers{
+            color: #7C6C77;
+        }
+        h1{margin-left: 10px; display: inline-block;}
+        .contact{
+            text-align: center; 
+            font-style: italic;
+            background-color: #D8D0C1; 
+            margin-right: 30%;
+            margin-left: 30%;
+            border: 1px;
+        }
+        ul{
+            background-color: #D8D0C1; 
+            
+            margin-right: 50%; 
+            list-style-image: url(https://openclipart.org/download/81865/monkey-face-cartoon.svg);
+        }
+
+
+
     </style>
 </head>
 <body>
-    <p><b>This is the design page of Jumping Monkey!</b></p>
+    <header class="daheader">
+        <img src="https://openclipart.org/image/800px/299177" alt="Monkey Logo">
+        <h1 class="headers">Jumping Monkey Enterprises</h1>
+        <img src="https://openclipart.org/image/800px/299177" alt="Monkey Logo">
+    </header>
+    <main>
+        <h2>About Jumping Monkey Enterprises</h2>
+        <p>Jumping Monkey Enterprises is a company that looks to have the most unique and rare colors for you to 
+            choose from for all your Barrel of Monkey needs. We are constantly working with researchers and chromatologists to find the newest,
+            rarest, and most appealing colors for you to enjoy. We want our customers to feel like they are getting the most 
+            out of the product and like they can trust us to find the best of the best for them.
+        </p>
+        <ul>
+            <li>All of the Barrel of Monkeys are authentic Barell of Monkeys from our supplier.</li>
+            <li>Many of our reasearchers and Chromatoligsts come from top school such as Harvard and Yale.</li>
+            <li>Guaranteed shipping to anywhere on the Earth.</li>
+            <li>Oh yeah, and that international shipping is on us. Free shipping always guaranteed.</li>
+            <li>All colors guaranteed to be unique and rare by our chromatologists.</li>
+        </ul>
+        <p>We want to make sure our customers always have a good exerpeience with Jumping Monkey Enterprises so we have a 
+        guaranteed return and refund policy for all products. For any questions about our policies feel free to contact use using
+        any of the contact information below.
+        </p>
+        <p class="contact">
+            Email: jumpingmonkey@gmail.com  
+            <br>
+            Phone Number: 919-799-3245
+            <br>
+            Address: 123 Maple Street PO Box 1126 Raleigh, NC
+        </p>
+    </main>
+    <footer>
+        <p>Page Built by Jumping Monkey Enterprises ©2024</p>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px"
+            src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a> 
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
 </body>
 </html>
