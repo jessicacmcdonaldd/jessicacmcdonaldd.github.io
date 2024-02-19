@@ -115,6 +115,9 @@ input.information {
     margin-left: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 250px; 
+    height: 45px;
+    
 }
 .monkey_img {
     margin-right:auto;
@@ -128,4 +131,7 @@ input.information {
 .monkey_buttons{
     width: 50%;
     margin: 0 auto;
+}
+.myButtons{
+    text-align: center;
 }
