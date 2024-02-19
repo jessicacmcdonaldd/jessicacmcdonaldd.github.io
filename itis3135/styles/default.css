@@ -95,5 +95,33 @@ input.information {
     width: 45%;
     padding: 10px;
   }
-
-  
+.script{
+    text-align: center;
+}
+.datetime{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.user-input{
+    text-align: center;
+}
+.favorite-number{
+    text-align: center;
+}
+.monkey_buttons button{
+    padding:5px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.monkey_img {
+    margin-right:auto;
+    margin-left:auto;
+    align-content: center;
+}
+.hide {
+    display:none;
+    
+}

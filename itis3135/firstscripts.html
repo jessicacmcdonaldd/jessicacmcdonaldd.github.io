@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica McDonald's Jovial Monkey || ITIS3135 First Scripts</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head> 
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>First Scripts</h2>  
+            <p class="script">First Scripts Page!</p>
+
+            <!--Date and time section-->
+           <div class="datetime">
+                <div class="time">08:42 PM</div>
+                <div class="date">Sunday, February 18 2024</div>
+            </div>
+
+            <!-- User input section--> 
+        <h3>Hello! What is your name and how are you doing?</h3>
+        <section class="user-input">
+            <input type="text" id="name" placeholder="Name" maxlength="20">  <br>  <br>
+            <input type="text" id="feeling" placeholder="Good/Bad" maxlength="20"> <br>  <br> 
+            <button type="button" id="btn1" onclick="userReturn()">Submit</button>
+                <p class="name-output" id="output1"></p>
+        </section>
+
+        <!--Favorite number polygon section-->
+
+        <section class="favorite-number">
+            <h3>Enter Your Favorite Number!</h3>
+                <label for="favoriteNumber">Favorite Number:</label>
+                <input type="text" id="favoriteNumber" name="favoriteNumber" placeholder="Enter a number 0 - 10">
+                <button onclick="findPolygonName()">Find My Polygon</button>
+        </section>
+
+        <!--Monkey buttons section-->
+        <section class="monkey_buttons">
+            <h3>Buttons About Jumping Monkey Enterprises:</h3>
+            <button type="button" id="monkey_picture" onclick="jumpingMonkey()">What does our Jumping Monkey look like?</button>
+            <div class="monkey_img">
+                <img id="monkey_img" src="images/jumping_monkey.jpg" alt="Jumping Monkey" style="display:none;">
+            </div>
+            <button type="button" id="rare_colors" onclick="rareColors()">How many rare colors are there in the world?</button> <br>
+                <p id="rare-colors" style="display:none">Scientists are discovering new rare colors all the time! So it's hard to give a definitive answer.</p>
+
+            <button type="button" id="species" onclick="monkeySpecies()">How many different kinds of real monkeys are there on earth?</button>
+                <p id="monkey-species" style="display:none;">There are 334 different specicies! WOW!</p>
+    
+            <button type="button" id="barrel" onclick="monkeyCount()">How many monkeys are there in a Barrel of Monkeys?</button>
+                <p id="monkey-count" style="display: none;"><b>12 MONKEYS!!!</b></p>
+    
+            <button type="button" id="cute" onclick="monkeyCute()">Why are monkeys so cute?!</button>
+                <p id="monkey-cute" style="display: none;">Cuz thats just how they are!!!!!!🙈🙈🙈🙈🙈🙈🙈🙈</p>
+        </section>
+
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/defaultscripts.js"></script>
+</body>
+</html>
