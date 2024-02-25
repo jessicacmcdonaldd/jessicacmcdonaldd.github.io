@@ -167,3 +167,28 @@ main {
         font-size: 20px;
     }
 }
+.about_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.about_header img{
+    max-width: 100px; 
+    margin: 0 10px;
+}
+.headers {
+    margin: 0; 
+}
+.slogan{
+    font-style: italic;
+    text-align: center;
+}
+.contact{
+    text-align: center; 
+    font-style: italic;
+    border: 4px dotted #82988b; 
+    padding: 25px;
+    margin-right: 30%;
+    margin-left: 30%; 
+}
