@@ -14,13 +14,19 @@
         <h2>BYO Intro</h2>
         <section class="byoborder">
         <h3>Time to BYO Intro page, please fill out the form below so we cant create your own page.</h3>
-        <form class="byo" id="form">
+        <form class="byo" id="byo_form">
             <p>Name:</p>
             <input id="name" name="name" type="text" value="Jessica McDonald" required="">
             <p>Mascot:</p>
             <input id="mascot" name="mascot" type="text" value="Jumping Monkey" required="">
             <p>Image:</p>
             <input type="file" name="image" id="image" required="">
+            <br>
+            <br>
+            <button type="button" onlick="loadImage()">CLICK HERE TO LOAD IMAGE</button>
+            <div id="loadimage">
+
+            </div>
             <br>
             <br>
             <p">Image Caption:<p></p>

@@ -1,9 +1,9 @@
-//@ts-check
+"use strict";
 
 let addedCourses = 0;
 let courseElement =[];
 
-let form = document.getElementById('form');
+let form = document.getElementById('byo_form');
 let appendHere = document.getElementById('appendHere');
 
 form.addEventListener("submit", makeForm);
@@ -42,10 +42,7 @@ function makeForm(event){
 
         courses.push(course);
     }
-
     
-
-
     let page = `
     <h1>${name} ⟡ ${mascot}</h1>
     <figure>
@@ -63,7 +60,7 @@ function makeForm(event){
     <li><strong>Funny/Interesting Thing: </strong>${funnyThing}</li>
     <li><strong>Anything Else: </strong>${anythingElse}</li>
     </ul>
-    <a href="byo_intro.html">New Intro Page</a>
+    <a href="byo_intro.html"><b>New Intro Page</b></a>
 
     <br>
     <br>
@@ -80,11 +77,6 @@ function makeForm(event){
         addhere?.appendChild(liElement);
 
     }
-
-
-
-
-
 }
 
 
@@ -121,4 +113,13 @@ function deleteCourse(element){
     }
 }
 
+function loadImage(){
+    var image = document.getElementById("image").files[0];
 
+    const imageUrl = URL.createObjectURL(image);
+
+    var text = "<img src=\"" + imageUrl + "\" >";
+
+    document.getElementById("loadimage").innerHTML = text;
+    console.log("function is working");
+}
