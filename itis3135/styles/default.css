@@ -192,3 +192,31 @@ main {
     margin-right: 30%;
     margin-left: 30%; 
 }
+.byo{
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 28%;
+}
+
+.byodiv{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+.byo input{
+    width: 375px;
+    height: 25px;
+}
+.byoborder{
+  border: 5px solid rgb(2, 2, 109); 
+  border-radius: 10px; 
+  padding: 20px;
+  background-color: #daebf5; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; 
+}
+input.byosub, input.byores {
+    width: 40% !important; 
+    
+}

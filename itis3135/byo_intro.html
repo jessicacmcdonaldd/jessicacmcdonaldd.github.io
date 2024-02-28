@@ -12,10 +12,51 @@
     </header>
     <main>
         <h2>BYO Intro</h2>
-        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
-        
+        <section class="byoborder">
+        <h3>Time to BYO Intro page, please fill out the form below so we cant create your own page.</h3>
+        <form class="byo" id="form">
+            <p>Name:</p>
+            <input id="name" name="name" type="text" value="Jessica McDonald" required="">
+            <p>Mascot:</p>
+            <input id="mascot" name="mascot" type="text" value="Jumping Monkey" required="">
+            <p>Image:</p>
+            <input type="file" name="image" id="image" required="">
+            <br>
+            <br>
+            <p">Image Caption:<p></p>
+            <input type="text" id="imagecaption" name="imagecaption" value="Jessica McDonald" required="">
+            <br>
+            <p>Personal Background:</p>
+            <input type="text" id="personalbackground" name="personalbackground" value="I am from Cary, North Carolina. I have one cat named Otto. I like to go thrifting and I like to read." required="">
+            <p>Professional Background:</p>
+            <input type="text" id="professionalbackground" name="professionalbackground" value="I am currently a TA for ITSC 1213 at UNC Charlotte and I was a preceptor for ITSC 1600. I have also previously been a waitress at a few different restaurants." required="">
+            <p>Academic Background:</p>
+            <input type="text" id="academicbackground" name="academicbackground" value="I went to highschool in Raleigh, NC. Now I am currently pursuing a BS in Computer Science with a concentration in Data Science, and I am minoring in Math." required="">  
+            <p>Background in Web Development:</p>
+            <input type="text" id="backgroundinwebdevelopment" name="backgroundinwebdevelopment" value="I don’t have much experience in this subject. I have never used most of the stuff we’re doing/using so I am excited to learn." required="">
+            <p>Primary Computer Platform:</p>
+            <input type="text" id="primarycomputerplatform" name="primarycomputerplatform" value="I use a Lenovo Laptop that has Windows 11." required="">  
+            <p id="appendHere">Courses currently taking:</p>
 
+            <button type="button" onclick="addCourse()">Add Course</button>
+            <p>Funny/Interesting Thing?</p>
+            <input type="text" id="funnything" name="funnything" value="I like to run!">
+            <p>Anything Else?</p>
+            <input type="text" id="anythingelse" name="anythingelse" value="Looking forward to learning in this class.">  
+            <br>
+            <br>
+
+            <label>I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+            <input type="checkbox" id="agreement" checked="" required="">     
+            <br>
+            <input type="submit" value="Submit" class="byosub">
+            <input type="reset" value="Reset" class="byores">
+        
+    </p">
+    </form>
+    </section>
     </main>
+    <div id="page" class="byodiv"></div>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
@@ -24,6 +65,7 @@
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/byo_intro.js"></script>
 
 </body>
 </html>
