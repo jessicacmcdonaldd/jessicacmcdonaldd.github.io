@@ -220,3 +220,20 @@ input.byosub, input.byores {
     width: 40% !important; 
     
 }
+.outline_header{
+    text-align: center;
+}
+.project_outline{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+hr{
+    height: 30px;
+    border-style: solid;
+    border-color: rgb(38, 3, 54);
+    border-width: 1px 0 0 0;
+}
+#wireframe{
+    width: 650px; 
+      height: auto;
+}
