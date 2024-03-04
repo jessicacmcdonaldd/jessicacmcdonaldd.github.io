@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica McDonald's Jovial Monkey ⟡ ITIS3135 Calculator Attempt</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head> 
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <fieldset class="calculator_attempt">
+
+            <legend class="calcattempt"><strong>Calculator Attempt</strong></legend> 
+            
+            <input type="number" id="num1" placeholder="Enter number 1">
+            <input type="number" id="num2" placeholder="Enter number 2">
+
+            <button onclick="result(add)">Addition</button>
+            <button onclick="result(subtract)">Subtraction</button>
+            <button onclick="result(multiply)">Multiplication</button>
+            <button onclick="result(divide)">Division</button>
+
+            <p id="result">Result: </p> 
+        </fieldset>
+    </main>
+
+    <!--I couldn't figure out how to have the result function seperate from the operations which is how I wanted to do it
+    but this is the only way I could actually get it to work. -->
+    <script>
+    function result(operation) {
+      let a = parseFloat(document.getElementById("num1").value);
+      let b = parseFloat(document.getElementById("num2").value);
+
+      document.getElementById("result").textContent = `Result: ${operation(a, b)}`;
+    }
+
+    function add(a, b) {
+      return a + b;
+    }
+
+    function subtract(a, b) {
+      return a - b;
+    }
+
+    function multiply(a, b) {
+      return a * b;
+    }
+
+    function divide(a, b) {
+      if (b !== 0) {
+        return a / b;
+      } else {
+        return "Cannot divide by zero";
+      }
+    }
+    </script>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
