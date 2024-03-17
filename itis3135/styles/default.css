@@ -297,3 +297,8 @@ hr{
 .buttons button:active{
     transform: scale(0.99);
 }
+
+.array_blocks{
+    margin-bottom: 10px;
+    border: 1.5px solid rgb(38, 3, 54);
+}
