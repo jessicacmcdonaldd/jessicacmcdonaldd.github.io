@@ -5,15 +5,964 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jessica's Hobby Site</title>
         <style>
-            
+            body{
+                padding-left: 100px;
+                padding-right: 100px;
+                background-color: #f5ebd8;
+                font-family: Georgia, serif;
+            }
+            header{
+                text-align: center;
+            }
+            nav{
+                color:#012622;
+            }
+            a{
+                color:#012622;
+                text-decoration: none; 
+            }
+            a:hover{
+                color:#E98A15;
+            }
+            hr{
+                border-color: #012622;
+            }
+            h1{
+                font-size: 37px;
+            }
+            h1,h2{
+                color: #558B6E;
+                -webkit-text-stroke: 1px black;
+            }
+            h2 {
+                display: inline-block; 
+                margin-right: 320px; 
+                font-size: 29px;
+            }
+            .container {
+                display: flex;
+                justify-content: space-between; 
+                margin-right: 5px;
+            }
+            p{
+                font-size: 18px;
+                margin-right: 15px;
+            }
+            ul{
+                margin-right: 15px;
+            }
+            .image {
+                margin-left: 45px;
+                text-align: left; 
+            }
+            figcaption{
+                font-style: italic;
+            }
+            main{
+                color:#615055;
+            }
+            .bottom_img{
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+            }
+            .genre_txt{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start; 
+            }
+          
+            .rolling_stones{
+                background-image: url('himages/tongue.png');
+                background-size: contain;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+            footer{
+                text-align: center;
+                color:#012622;
+            }
+            footer a{
+                color: #b17f8e;
+            }
+
+            /*playlist css */
+            .playlist_container {
+                position: relative;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            .songs {
+                display: none;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+            .songs:first-child {
+                display: block;
+            }
+            .image {
+                margin: 20px auto;
+                display: inline-block;
+            }
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;           
+                color: #012622;
+                font-size: 18px;
+            }
+            .prev {
+                left: 10px;
+            }
+            .next {
+                right: 10px;
+            }
+            .bullet {
+                cursor: pointer;
+                display: inline-block;
+                margin: 0 5px;
+                width: 10px;
+                height: 10px;
+                background-color: grey;
+                border-radius: 50%;
+            }
+            .bullet.active {
+                background-color: #558B6E;
+            }
+                
+
         </style>
     </head>
+    <body onload = "jump('home')"></body>
 <body>
+    <header>
+        <h1>
+            My Music Obsession!
+        </h1>
+        <nav>
+            「 <a href="javascript:jump('home')">Home</a> |
+            <a href="javascript:jump('about')">About Me</a> |
+            <a href="javascript:jump('how')">How</a> |
+            <a href="javascript:jump('when')">When</a> |
+            <a href="javascript:jump('folk')">Folk</a> |
+            <a href="javascript:jump('folk_rock')">Folk Rock</a> |
+            <a href="javascript:jump('rock_roll')">Rock and Roll</a> |
+            <a href="javascript:jump('pop')">Pop Rock</a> | 
+            <a href="javascript:jump('jazz')">Jazz</a> |
+            <a href="javascript:jump('why')">Why</a> |
+            <a href="javascript:jump('playlist')">Playlist</a> |
+            <a href="javascript:jump('sources')">AI Sources</a> |
+            <a href="../index.html">Main Site</a> 」
+        </nav>
+    </header>
 <main>
-    <h1>
-        My Music Obsession!
-    </h1>
+    <hr>
+    <section id="home">
+        <h2>Home</h2>
+        <div class="container">
+            
+            <p>I love music! I love listening to many different types of music. I am one of those people that says that they like every genre of music, but I definitely have my favorites. Here have a linked a few of my favorite genres and will dive into some of my favorites of each genre.
+            <br>
+            <br>
+           I know my music taste isn't anything new or out of this world but I still like to share the songs I like and I am interested in. I am not saying that I have the best music taste either, though of course people usually think their music taste is elite.
+           <br>
+           <br>
+           “Music is to the soul what words are to the mind.” -- Modest Mouse, Modest Mouse - Good News for People Who Love Bad News
+            </p>
+            <figure class="image" data-audio-id="audio1">
+                <img src="himages/record.gif" alt="Record Player"  style="cursor: pointer; border-radius: 10px; width: 150px; height: auto;">
+                <figcaption>Click here to play this page's featured song, Wild Horses - The Rolling Stones</figcaption>
+            </figure>
+            <audio id="audio1" src="himages/Wild_Horses.mp3"></audio>
+         
+        </div>
+        <figure>
+            <img src="himages/musicsnoopy.jpg" alt="Snoopy Listening to Music" style="width: 300px; height: auto;">
+            <figcaption>Me if I was Snoopy.</figcaption>
+        </figure>
+        <p>Happy Listening :)</p>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="container">
+            <p>
+                My name is Jessica McDonald and I am currently a sophomore at UNCC. I am majoring in Computer Science and Math. I have loved music my whole life and my parents have always made sure that music was incorporated in my life somehow since a very young age.
+                I grew up listening to all of my dad's old CDs in the car on road trips and on an old boombox he had. I remember being little and dancing around our house to Dancing Queen by ABBA and Fat Bottomed Girls by Queen. This was probably my first exposure to the music I love today.
+                <br>
+                <br>
+                Starting in 4th grade I joined band and played all the way through highschool. I love playing music almost as much as I love listening to music. Starting when I got access to the internet (probably sometime in middle school) I started developing my own personal tastes for music
+                which have slowly developed over the years and have ultimately lead me to where I am today. I started making playlists on Spotify and many other platforms in late middle school and I have been doing it ever since. Making a new playlist, discovering new music, and listening to music are some of 
+                my favorite things in the whole world. Music has become my life as listening to music as become more accessable. I can now listen to music wherever and whenever I want as long as a have a set of headphones on me. This has led me to have some pretty crazy listening times on my Spotify wrapped.
+                <br>
+                <br>
+                Listening, learning, and creating music has changed my life and that's why listening to music is my favorite hobby!
+            </p>
+
+            <figure class="image" data-audio-id="audio2">
+                <img src="himages/record.gif" alt="Record Player" style="cursor: pointer; border-radius: 10px; width: 150px; height: auto;">
+                    <figcaption>Click here to play this page's featured song, Get Back - The Beatles</figcaption>
+                </figure>
+                <audio id="audio2" src="himages/Get_Back.mp3"></audio>
+        </div>
+
+        <figure>
+            <img src = "himages/cat.jpg" alt="cat life" style="width: 200px; height: auto;">
+            <figcaption>Me if I was a cat (how I wish life was)</figcaption>
+        </figure>
+    </section>
+    <section id="how">
+        <h2>How I choose to listen to music!</h2>
+        <h3>Different Audio Medias</h3>
+        <div class="container">
+            <ul>
+                <li>
+                    Record Player/Records
+                </li>
+                <ul>
+                    <li>
+                        I have just recently started getting into buying records and I only have one basic record player currently. Records can be expensive and hard to find so it's not my ideal way to listen to music.
+                        I do like collecting records though because they are a fun thing to have. I like the sound the record player gives and the vibe that it fits. It is very homey.
+                    </li>
+                    <li>
+                        The only records I own at the moment are 3 Jim Croce records, including Greating Hits and I Got a Name. I also recently purchased and Eagles greatest hits record. Jim Croce is probably my favorite
+                        artist crossing multiple genres so I was thrilled when I found multiple of his albums as records, and they weren't expensive!
+                    </li>
+                    <li>
+                        My goal one day is to own Some Girls by The Rolling Stones (my favorite album of all time) and Tattoo You by The Rolling Stones as records. These are two of my favorite albums and I love the cover and the music of course.
+                    </li>
+                </ul>
+                <li>CDs</li>
+                <ul>
+                    <li>
+                        I have so many CDs it would probably take me ours on end to count exactly how many I have. I have loved CDs for a long time because growing up I has a CD clock radio that would play as my alarm every morning before school. I especially loved it because it was pink.
+                        Most of my CDs I have been given by family members, mostly my dad. He has given me so many CDs that my car counsel is now overflowing into the holders on the doors.
+                    </li>
+                    <li>
+                        I have too many CDs to name every single one but some of my favorites are of coure, the Jim Croce CD I burned, Queen's greatest hits, FleetWood Mac Greatest Hits, and All Things Must Pass by George Harrison. 
+                    </li>
+                </ul>
+                <li>Spotify</li>
+                <ul>
+                    <li>
+                        Spotify Premium has single handedly changed my life for the better forever. I do not know what I would do without it. I can download all my playlists and listen to them all day everyday for how every long I want and wherever I want.
+                        Spotify is the number one used app on my phone most days. Sometimes I average 8-12 hours a day using Spotify. Spotify is where I make all my playlists to fit every occasion and so I can listen to all the songs I love in one place. So I can pick a playlist that fits the vibe of whatever mood I am in.
+                    </li>
+                    <li>
+                        Currently, my longest Spotify playlist has 765 songs on it! My shortest is at about 16 songs. I also like how with Spotify you can listen to the same song over and over again until you can't bare it anymore. I do this a lot when I find a song I really like. Spotify lets you make playlists with your friends which is another feature I like because
+                        I love sharing music with my family and friends! 
+                    </li>
+                </ul>
+            </ul>
+
+            
+            <figure class="image" data-audio-id="audio3">
+                <img src="himages/record.gif" alt="Record Player"  style="cursor: pointer; border-radius: 10px; width: 150px; height: auto;">
+                <figcaption>Click here to play this page's featured song, It Never Rains In Southern California - Sonny & Cher</figcaption>
+            </figure>
+            <audio id="audio3" src="himages/sonny_cher.mp3"></audio>
+
+        </div>
+        <div class="bottom_img">
+            <figure>
+                <img src="himages/record_closeup.jpeg" alt="Record Player Close Up"  style="border-radius: 10px; width: 150px; height: auto; padding: 10px;">
+                <figcaption>Record Player</figcaption>
+            </figure>
+            <figure>
+                <img src="himages/pink_cdplayer.jpeg" alt="Pink CD Player"  style="border-radius: 10px; width: 150px; height: auto; padding: 10px;">
+                <figcaption>Pink CD Player & Radio</figcaption>
+            </figure>
+            <figure>
+                <img src="himages/spotify.jpeg" alt="Spotify Logo"  style="border-radius: 10px; width: 150px; height: auto; padding: 10px;">
+                <figcaption>Spotify Logo</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="when">
+        <h2>When do I listen to music?</h2>
+        <div class="container">
+        
+            <p>I listen to music throughout all times of the day. I mainly started listening to music when I did homework. My favorite thing to listen to when I do homework is songs from the Studio Ghibli movies or Joe Hisashi who is the composer for many of 
+                the songs from those movie. I don't have him featured on this sight but he has had a big impact on the classical music I have begun listening to. I like to listen to other classicla music soundtracks while I do work like music from Tchaikovsky's Swan Lake and the Nutcracker. 
+                Even when it isn't Christmas, I like listening to the instrumental album A Charlie Brown Christmas by Vince Guaradli Trio. This was my favorite study music for like a 3 month period recently!
+            <br>
+            <br>
+                Other than that I usually just listen to whatever music I am in the mood for, whenever can and whenever I want to! Luckily with technology advancements I am able to listen to music pretty much anywhere thanks to the inventions of wireless headphones, downloading music to listen offline, and bluetooth car connect so I can play music through my car.
+                I am lucky to be living in a time with all these advancements because I don't know what I would do without them! 
+            </p>
+
+            <figure class="image" data-audio-id="audio4">
+                <img src="himages/record.gif" alt="Record Player"  style="cursor: pointer; border-radius: 10px; width: 150px; height: auto;">
+                <figcaption>Click here to play this page's featured song, My Sweet Lord - George Harrison</figcaption>
+            </figure>
+            <audio id="audio4" src="himages/sweet_lord.mp3"></audio>
+            
+        </div>
+        <div class="bottom_img">
+            <figure>
+                <img src="himages/peanuts_xmas.png" alt="A Charlie Brown Christmas Album" style="width: 200px; height: auto;">
+                <figcaption>A Charlie Brown Christmas Album</figcaption>
+            </figure>
+            <figure>
+                <img src="himages/spirited_away.png" alt="Spirited Away" style="width: 200px; height: auto;">
+                <figcaption>Spirited Away - my favorite Studio Ghibli movie (as of rn)</figcaption>
+            </figure>
+            <figure>
+                <img src="himages/cat_driving.jpg" alt="Cat Driving" style="width:200px; height: auto;">
+                <figcaption>Me in the car (I don't wear headphones while I drive)</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="folk">
+        <h2>
+            Folk Music
+        </h2>
+        <div class="container">
+            <div class="genre_txt">
+                <p>Folk music is a genre that I have really been into lately, especially because it features one of my favorite artists Jim Croce. The folk music I mainly listen to is from the 60s and 70s. Though this the time from of most of the music I like I would say my folk music is more tunneled into an 10 year window of 1965-1975, making it more specific of a style of music.</p>
+                <h4>Some of my favorite folk artists:</h4>
+                <div class="jim_croce">
+                    <figure>
+                        <img src="himages/sketch_jc.png" alt="Sketch of Jim Croce" style="cursor: pointer; width: 200px; height: auto;">
+                        <figcaption><strong>Jim Croce (1943-1973)</strong></figcaption>
+                    </figure>
+                    
+                    <p>Jim Croce became one of my favorite artists very quickly. I think I like almost every single one of his songs. He has a wide variety of different vibes to his songs (sad, happy, etc.) which is why I started liking him so much. I am also a big fan of the guitar that's featured in almost every single one of his songs. 
+                        It's hard for me to pick a favorite but I will list some of them out below.</p>
+                    
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            I Got a Name - 1973
+                        </li>
+                        <li>
+                            Age - 1973
+                        </li>
+                        <li>
+                            I'll Have to Say I Love You in a Song - 1973
+                        </li>
+                        <li>
+                            New York's Not My Home - 1972
+                        </li>
+                        <li>
+                            Railroads and Riverboats - 1966
+                        </li>
+                        <li>
+                            Photographs and Memories - 1972
+                        </li>
+                        <li>
+                            Roller Derby Queen - 1973
+                        </li>
+                        <li>
+                            Dreamin' Again - 1973
+                        </li>
+                    </ul>
+                </div>
+                <div class="simon_garfunkel">
+                    <figure>
+                        <img src="himages/simon_garfunkel.jpg" alt="Image of Simon & Garfunkel" style="cursor: pointer; width: 200px; height: auto;">
+                        <figcaption><strong>Simon & Garfunkel</strong></figcaption>
+                    </figure>
+                    <p>Favorite Songs:</p>
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            Wednesday Morning, 3A.M. - 1964
+                        </li>
+                        <li>
+                            Mrs. Robinson - 1968
+                        </li>
+                        <li>
+                            America - 1968
+                        </li>
+                        <li>
+                            Cecilia - 1970
+                        </li>
+                    </ul>
+                </div>
+                <div class="bob_dylan" style="padding-left: 200px;">
+                    <figure>
+                        <img src="himages/bob_dylan.png" alt="Image of Simon & Garfunkel" style="cursor: pointer; width: 200px; height: auto;">
+                        <figcaption><strong>Bob Dylan</strong></figcaption>
+                    </figure>
+                    <p>Favorite Songs:</p>
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            Hurricane - 1976
+                        </li>
+                        <li>
+                            You're a Big Girl Now - 1975
+                        </li>
+                        <li>
+                            The Times They Are A-Changin' - 1964
+                        </li>
+                        <li>
+                            Don't Think Twice, It's Alright - 1963
+                        </li>
+                    </ul>
+                </div>
+                <div class="more_songs">
+                    <p><strong>More Songs...</strong></p>
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            Take Me Home, Country Roads - John Denver (1971)
+                        </li>
+                        <li>
+                            White Sun - The Doobie Brothers (1972)
+                        </li>
+                        <li>
+                            Early Mornin' Rain - Peter, Paul, Mary (1965)
+                        </li>
+                        <li>
+                            Our House - Crosby, Stills, Nash & Young (1970)
+                        </li>
+                        <li>
+                            I'll Be Here in the Morning - Townes Van Zandt (1969)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <figure class="image" data-audio-id="audio5">
+                <img src="himages/record.gif" alt="Record Player"  style="cursor: pointer; border-radius: 10px; width: 150px; height: auto;">
+                <figcaption>Click here to play this page's featured song, New York's Not My Home - Jim Croce</figcaption>
+            </figure>
+            <audio id="audio5" src="himages/ny_jimcroce.mp3"></audio>
+        </div>
+    </section>
+    <section id="folk_rock">
+        <h2>
+            Folk Rock
+        </h2>
+        <div class="container">
+            <div class="genre_txt">
+                <p>Folk rock is probably one of my favorite genre's of all time. Most of my favorite bands and artists fall under this category, so maybe that has something to do with it. I think I like this genre a lot because I like how most of the songs are upbeat but still incorporate some of the softer guitar of songs that
+                    would be categrized as just folk music. One thing I look for a lot in songs is lyrics but I also like when the background music blends well and I find that in this genre there's usually a story that flows well with the music.
+                </p>
+                <div class="eagles">
+                    <p><strong>Eagles</strong></p>
+                    <figure>
+                        <img src="himages/hotel-california-album.jpg" alt="similar album cover to hotel california" style="cursor: pointer; width: 200px; height: auto;">
+                        <figcaption>Image that looks similar to the album cover for Hotel California - Eagles (1976)</figcaption>
+                    </figure>
+                    <p>Favorite Songs: </p>
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            Witchy Woman - 1972
+                        </li>
+                        <li>
+                            Take It Easy - 1972
+                        </li>
+                        <li>
+                            One of These Nights - 1975
+                        </li>
+                        <li>
+                            Lyin' Eyes - 1975
+                        </li>
+                        <li>
+                            Peacful Easy Feeling - 1972
+                        </li>
+                    </ul>
+                </div>
+                <div class="america">
+                <p><strong>America</strong></p>
+                    <figure>
+                        <img src="himages/america.jpg" alt="America Ventura Highway" style="cursor: pointer; width: 200px; height: auto;">
+                        <figcaption>Image of Ventura Highway, like the song by America</figcaption>
+                    </figure>
+                    <p>Favorite Songs:</p>
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            A Horse with No Name - 1972
+                        </li>
+                        <li>
+                            Ventura Highway - 1972
+                        </li>
+                        <li>
+                            Sister Golden Hair - 1975
+                        </li>
+                        <li>
+                            Lonely People - 1974
+                        </li>
+                        <li>
+                            Sandman - 1974
+                        </li>  
+                        <li>
+                            I Need You - 1974
+                        </li>
+                    </ul>
+                </div>
+                <div class="fleetwood_mac">
+                    <p><strong>FleetWood Mac</strong></p>
+                    <figure>
+                        <img src="himages/fleetwood_mac.png" alt="FleetWood Mac" style="cursor: pointer; width: 200px; height: auto;">
+                        <figcaption>FleetWood Mac</figcaption>
+                    </figure>
+                    <!--<p>I love so many Fleetwood Mac songs keeping this list down is going to be hard.</p>-->
+                    <p>Favorite Songs:</p>
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            As Long As You Follow - 1988
+                        </li>
+                        <li>
+                            Gypsy - 1982
+                        </li>
+                        <li>
+                            Emerald Eyes - 1972
+                        </li>
+                        <li>
+                            Monday Morning - 1975
+                        </li>
+                        <li>
+                            Say You Love Me - 1975
+                        </li>
+                        <li>
+                            Never Going Back Again - 1977
+                        </li>
+                        <li>
+                            The Chain - 1977
+                        </li>
+                        <li>
+                            You Make Loving Fun - 1977
+                        </li>
+                        <li>
+                            Only Over You - 1982
+                        </li>
+                        <li>
+                            Everywhere - 1987
+                        </li>
+                        <li>
+                            Little Lies - 1987
+                        </li>
+                    </ul>
+                </div>
+                <div class="more">
+                    <p><strong>More Songs...</strong></p>
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            It Never Rains In Southern California - Sonny & Cher (1973)
+                        </li>
+                        <li>
+                            Rock'n Me - Steve Miller Band (1976)
+                        </li>
+                        <li>
+                            Fly Like An Eagle - Steve Miller Band (1976)
+                        </li>
+                        <li>
+                            California Dreamin' - The Mamas & the Papas (1966)
+                        </li>
+                        <li>
+                            Me & Magdalena - The Monkees (2016)
+                        </li>
+                        <li>
+                            Wild World - Cat Stevens (1970)
+                        </li>
+                        <li>
+                            Father and Son - Cat Stevens (1970)
+                        </li>
+                        <li>
+                            Morning Has Broken - Cat Stevens (1971)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <figure class="image" data-audio-id="audio6">
+                <img src="himages/record.gif" alt="Record Player"  style="cursor: pointer; border-radius: 10px; width: 150px; height: auto;">
+                <figcaption>Click here to play this page's featured song, Ventura Highway - America</figcaption>
+            </figure>
+            <audio id="audio6" src="himages/ventura_highway.mp3"></audio>
+        </div>
+    </section>
+    <section id="rock_roll">
+        <h2>
+            Rock and Roll
+        </h2>
+        
+        <div class="container">
+            <div class="genre_txt">
+                <div class="rolling_stones">
+                    <p><strong>The Rolling Stones</strong></p>
+                    <figure>
+                        <img src="himages/rollingstones.png" alt="The Rolling Stones" style="width: 200px; height:auto;"> 
+                        <figcaption>The Rolling Stones (Image created to be similar to Some Girls album cover)</figcaption>
+                    </figure>
+                </div>
+                <div class="some_girls">
+                    <p>The Rolling Stones is by far my favorite rock group of all time. I love so many of their songs and luckily I have plenty to choose from since they've made a lot of musice. I LOVE the <strong>'Some Girls'</strong> album that came out
+                    in 1978. I don't have a single skip on that album.</p>
+                    <p>My Favorites From "Some Girls" Are:</p>
+                    <ul  style="list-style-type: circle;">
+                        <li>
+                            Miss You
+                        </li>
+                        <li>
+                            Beast of Burden
+                        </li>
+                        <li>
+                            Shattered
+                        </li>
+                        <li>
+                            Before They Make Me Run
+                        </li>
+                    </ul>
+                </div>
+                <div class="tattoo_you">
+                    <p>Another album that I love by The Rolling Stones it <strong>'Tattoo You'</strong>. This album is definitely second to <strong>'Some Girls'</strong> but I still love all the songs on it.
+                    This album is a different vibe from the other one probably because it did come out a little later, in 1981.</p>
+                    <figure>
+                        <img src="himages/tattoo_you.jpg" alt="Image Like Tattoo You Cover" style="width: 200px; height:auto;">
+                        <figcaption>Image Created to Look Like Tattoo You Album Cover</figcaption>
+                    </figure>
+                    <p>My Favorite Songs From "Tattoo You" Are:</p>
+                    <ul style="list-style-type: circle;">
+                        <li>
+                            Little T&A
+                        </li>
+                        <li>
+                            Start Me Up
+                        </li>
+                        <li>
+                            Waiting On a Friend
+                        </li>
+                        <li>
+                            Tops
+                        </li>
+                    </ul>
+                </div>
+                <p>Now, of course The Rolling Stones aren't the only rock band I like. Some other bands and artists include,<strong> The Beatles, Queen, David Bowie, Led Zeppplin, 
+                    Pink Floyd, REO Speedwagon, The Who, Faces, The Kinks</strong>, and many more.</p>
+                    <p>My Favorite Songs By These Bands Include (but are not limited to):</p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        Just Another Honky - Faces (1973)
+                    </li>
+                    <li>
+                        Don't Stop Me Now - Queen (1978)
+                    </li>
+                    <li>
+                        Fat Bottomed Girls - Queen (1978)
+                    </li>
+                    <li>
+                        In My Life - Beatles (1965)
+                    </li>
+                    <li>
+                        Something - Beatles (1969)
+                    </li>
+                    <li>
+                        Under Pressure - Queen & David Bowie (1982)
+                    </li>
+                    <li>
+                        Changes - David Bowie (1971)
+                    </li>
+                    <li>
+                        Starman - David Bowie (1972)
+                    </li>
+                    <li>
+                        All My Love - Led Zeppplin (1979)
+                    </li>
+                    <li>
+                        Wish You Were Here - Pink Floyd (1975)
+                    </li>
+                    <li>
+                        Another Brick Wall Pt. 2 - Pink Floyd (1979)
+                    </li>
+                    <li>
+                        Take It On the Run - REO Speedwagon (1980)
+                    </li>
+                    <li>
+                        Keep on Loving You - REO Speedwagon (1980)
+                    </li>
+                    <li>
+                        Baba O'Reilly - The Who (1971)
+                    </li>
+                    <li>
+                        Lola - The Kinks (1970)
+                    </li>
+                </ul>
+                <p>I feel like I could have listed at least another 100 songs, but I will limit it to these 15 for your sake and for mine. These are 15 classics that I enjoy and I hope you will too!</p>
+            </div>
+
+            <figure class="image" data-audio-id="audio7">
+                <img src="himages/record.gif" alt="Record Player"  style="cursor: pointer; border-radius: 10px; width: 150px; height: auto;">
+                <figcaption>Click here to play this page's featured song, Beast of Burden - The Rolling Stones</figcaption>
+            </figure>
+            <audio id="audio7" src="himages/beast_of_burden.mp3"></audio>
+            
+        </div>
+        <div class="bottom_img">
+            <figure>
+                <img src="himages/queen.png" alt="Queen - Band" style="width: 200px; height:auto;">
+                <figcaption>Queen</figcaption>
+            </figure>
+            <figure>
+                <img src="himages/abbey_road.png" alt="Abbey Road - The Beatles" style="width: 200px; height:auto;">
+                <figcaption>The Beatles - Abbey Road</figcaption>
+            </figure>
+            <figure>
+                <img src="himages/david_bowie.png" alt="David Bowie" style="width: 200px; height:auto;">
+                <figcaption>David Bowie</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="pop">
+        <h2>
+            Pop Rock
+        </h2>
+        <div class="container">
+            <div class="genre_txt">
+                <p>Some of my favorite artists/groups that fall under the Pop-Rock genre are Todd Rundgren, Ace of Base, ABBA, The Beach Boys, Bee Gees, etc.</p>
+                <figure>
+                    <img src="himages/something_anything.png" alt="Something / Anything ? - Todd Rundgren (my fav album by him)" style="width: 200px; height: auto;">
+                    <figcaption>Something / Anything ? - Todd Rundgren</figcaption>
+                </figure>
+                <figure>
+                    <img src="himages/abba.png" alt="Abba" style="width: 200px; height: auto;">
+                    <figcaption>ABBA</figcaption>
+                </figure>
+                <figure>
+                    <img src="himages/Bee_Gees.png" alt="Bee Gees Logo" style="width: 200px; height: auto;">
+                    <figcaption>Bee Gees Album Cover</figcaption>
+                </figure>
+                <div class="favs">
+                <p><strong>Some of my favorite songs by these artists are: </strong></p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        Dancing Queen - ABBA (1976)
+                    </li>
+                    <li>
+                        Gimme! Gimme! Gimme! (A Man After Midnight) - ABBA (1979)
+                    </li>
+                    <li>
+                        Waterloo - ABBA (1974)
+                    </li>
+                    <li>
+                        Take a Chance On Me - ABBA (1977)
+                    </li>
+                    <li>
+                        Lay All Your Love On Me - ABBA (1980)
+                    </li>
+                    <li>
+                        Hello It's Me - Todd Rundgren (1972)
+                    </li>
+                    <li>
+                        I Saw the Light - Todd Rundgren (1972)
+                    </li>
+                    <li>
+                        Fastlove, Pt. 1 - George Michael (1996)
+                    </li>
+                    <li>
+                        The Sign - Ace of Base (1993)
+                    </li>
+                    <li>
+                        Surfin' U.S.A - The Beach Boys (1963)
+                    </li>
+                    <li>
+                        Good Vibrations - The Beach Boys (1967)
+                    </li>
+                    <li>
+                        More Than a Woman - Bee Gees (1977)
+                    </li>
+                    <li>
+                        Night Fever - Bee Gees (1977)
+                    </li>
+                    <li>
+                        You Should Be Dancing - Bee Gees (1976)
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <figure class="image" data-audio-id="audio8">
+                <img src="himages/record.gif" alt="Record Player"  style="cursor: pointer; border-radius: 10px; width: 150px; height: auto;">
+                <figcaption>Click here to play this page's featured song, I Saw the Light - Todd Rundgren</figcaption>
+            </figure>
+            <audio id="audio8" src="himages/todd_rundgren.mp3"></audio>
+        </div>
+    </section>
+    <section id="jazz">
+        <h2>
+            Jazz Music
+        </h2>
+        <div class="container">
+            <div class="genre_txt">
+                <p>I've recently gotten into jazz music because I started listening to it a lot when I do homework or when I am cooking. Hiroshi Suzuki (鈴木弘) is one of my favorite Jazz artists and he is how I found out about more jazz artists. The specific group of artists or small section of jazz artists
+                    I listen to are all Japanese artists from the 1970s. I find that I like their style of jazz music the best. Suzuki, specifically, is a trombonist from Yokohama, Kanagawa, Japan. I am also interested in artists such as Ryo Fukui, Masabumi Kikuchi, Jiro Inagaki. There are many more artists in the 1970s Japanese Jazz category that I am interested in listening to and learning about!
+                </p>
+                <p>Some songs to listen to ... </p>
+                <ul style="list-style-type: circle;">
+                    <li>
+                        The whole album <strong>Cat (キャット)</strong> by Hiroshi Suzuki (鈴木弘) (1976)
+                    </li>
+                    <li>
+                        ペインテッド・パラダイス (Painted Paradise) by Jiro Inagaki and His Soul Band (1975)
+                    </li>
+                    <li>
+                        Scenery -- Early Summer --  I Want To Talk About You -- all songs by, Ryo Fukui (1976)
+                    </li>
+                    <li>
+                        If I Said The Sky Was Falling (スカイ・ウォズ・フォーリング) -- Matrix (マトリックス) -- from the Matrix (マトリックス) EP by Masabumi Kikuchi (and his sixtet) (1969)
+                    </li>
+                </ul>
+            </div>
+            <figure class="image" data-audio-id="audio9">
+                <img src="himages/record.gif" alt="Record Player"  style="cursor: pointer; border-radius: 10px; width: 150px; height: auto;">
+                <figcaption>Click here to play this page's featured song, Romance (ロマンス) - Hiroshi Suzuki (鈴木弘)</figcaption>
+            </figure>
+            <audio id="audio9" src="himages/cat_romance.mp3"></audio>
+        </div>
+        <div class="bottom_img">
+            <figure>
+                <img src="himages/hiroshi.png" alt="Hiroshi Suzuki" style="width: 200px; height: auto;">
+                <figcaption>Cat by Hiroshi Suzuki</figcaption>
+            </figure>
+            <figure>
+                <img src="himages/tohru_aizawa.png" alt="Tohru Aizawa Quartet" style="width: 200px; height: auto;">
+                <figcaption>Tohru Aizawa Quarter -- They only ever published one album called Tachibana.</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="why">
+        <h2>
+            Why Listen to Music?
+        </h2>
+        <div class="container">
+           <div class="genre_txt">
+                
+                <p>
+                    The ultimate question... Why?
+                    <br>
+                    <br>
+                    Because why not!!! Just kidding. Music gives me an outlet for my emotions and however I am feeling, sad, happy, etc. It's also a great way for me to connect with my friends so we can talk about music and what songs we like and don't like. Why one person likes one song over another.
+                    It's fun! Listening to music is fun! You can sing and dance to it and what's not to love about that. Music makes me happy and makes me feel fulfilled.
+                </p>
+
+            <div class="disco_cat">
+                <figure>
+                    <img src="himages/disco_cat.jpeg" alt="Disco Cat" style="width: 200px; height: auto;">
+                    <figcaption>Disco Cat</figcaption>
+                </figure>
+            </div>
+            <div class="dolphins"></div>
+                <figure>
+                    <img src="himages/the_world.jpeg" alt="Lisa Frank Style Dolphins" style="width: 200px; height: auto;">
+                    <figcaption>The World When I'm Listening to Music</figcaption>
+                </figure>
+            </div>
+        
+        <figure class="image" data-audio-id="audio10">
+            <img src="himages/record.gif" alt="Record Player"  style="cursor: pointer; border-radius: 10px; width: 150px; height: auto;">
+            <figcaption>Click here to play this page's featured song, Honky Tonk Women - The Rolling Stones</figcaption>
+        </figure>
+        <audio id="audio10" src="himages/honky_tonk_women.mp3"></audio>
+        </div>
+    </section>
+    <section id="playlist">
+        <h2>My Favorite Songs Playlist</h2>
+        <p>Here I've put some of my favorite songs that haven't previously been linked so you can scroll through and listen! Enjoy!</p>
+        <div class="playlist_container">
+            <div class="songs" style="display: block;">
+                <figure class="image" data-audio-id="audio11">
+                    <img src="himages/hammer_to_fall.png" alt="Hammer to Fall by Queen" style="width:200px; height: auto;">
+                </figure>
+                <audio id="audio11" src="himages/hammer_queen.mp3"></audio>
+            </div>
+            <div class="songs">
+                <figure class="image" data-audio-id="audio12">
+                    <img src="himages/follow_fleetwood_mac.png" alt="As Long As You Follow by Fleetwood Mac" style="width: 200px; height: auto;">
+                </figure>
+                <audio id="audio12" src="himages/as_long_as_you_follow.mp3"></audio>
+            </div>
+            <div class="songs">
+                <figure class="image" data-audio-id="audio13">
+                    <img src="himages/peter_paul_mary.png" alt="Early Monrin' Rain by Peter, Paul, and Mary" style="width: 200px; height: auto;">
+                </figure>
+                <audio id="audio13" src="himages/early_mornin_rain.mp3"></audio>
+            </div>
+            <div class="songs">
+                <figure class="image" data-audio-id="audio14">
+                    <img src="himages/something_beatles.png" alt="Something by The Beatles" style="width: 200px; height: auto;">
+                </figure>
+                <audio id="audio14" src="himages/something_beatles.mp3"></audio>
+            </div>
+            <div class="songs">
+                <figure class="image" data-audio-id="audio15">
+                    <img src="himages/all_of_my_love.png" alt="As Long As You Follow by Fleetwood Mac" style="width: 200px; height: auto;">
+                </figure>
+                <audio id="audio15" src="himages/all_of_my_love.mp3"></audio>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+            <div style="text-align:center">
+                <span class="bullet active" onclick="currentSlide(1)"></span>
+                <span class="bullet" onclick="currentSlide(2)"></span>
+                <span class="bullet" onclick="currentSlide(3)"></span>
+                <span class="bullet" onclick="currentSlide(4)"></span>
+                <span class="bullet" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+        <p style="text-align: center;">Click play/pause button to listen!</p>
+    
+    </section>
+    <section id="sources">
+        <h2>
+            AI Sources
+        </h2>
+        <ol>
+            <li>
+                ** ALL IMAGES/GIFS ARE AI GENERATED AS ASKED **
+                <ol>
+                    <li>
+                        used multiple different image and gif generators.
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Used AI to help me with the javascript for the nav bar. I wanted to make it all one function and it helped me do that and implement it into my html.
+            </li>
+            <li>
+                I had never used audio before so I looked up how to implement that - w3 schools.
+            </li>
+            <li>
+                Then, my function (for making the record player on each page) was only working for one of my pages and not all of them so I asked AI to help me and I had to change my function to take class and not id for each of the audios.
+            </li>
+            <li>
+                Looked up how to put a border on my text letters for styling e.i. "-webkit-text-stroke" - Stack Overflow.
+            </li>
+            <li>
+                For my .genre_txt in css I had to ask AI how to get the content to wrap with out everything getting smushed into eachother because I couldn't get them to stop overlapping.
+            </li>
+            <li>
+                Had to look up syntax for making a background image ( i forgot :/ ) - w3 schools.
+            </li>
+            <li>
+                For my playlist, I used AI to help me make the function for it because I think I made one carousel once on freeCodeCamp but I couldn't I was messing up the javascript a lot even though I could remember most of the html.
+            </li>
+        </ol>
+    </section>
+    <hr>
 </main>
+<footer>
+    <p>Page Built by <a href="jessicawebdesigns.art/">Jessica Web Designs Inc. </a>&copy;2024, <a href="https://www.freecodecamp.org/certification/jessicamcdonald/responsive-web-design">Certified in RWD</a></p>
+
+<a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+    <img style="border:0;width:88px;height:31px"
+    src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+</a> 
+<a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+</a>
+<a href="https://wave.webaim.org/report#/" id="validation_link_wcag">
+    <img style="border:0;width:88px;height:31px" src="../images/button_validation_wcag.png" alt="Valid WCAG!">
+</a>
+<script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    document.getElementById("validation_link_wcag").setAttribute("href", "https://wave.webaim.org/report#/" + location.href);
+</script>
+</footer>
 <script src="hobby.js"></script>
 </body>  
 </html>
