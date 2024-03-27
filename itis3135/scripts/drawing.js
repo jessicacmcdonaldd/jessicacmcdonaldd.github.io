@@ -1,53 +1,70 @@
-let font,
-  fontsize = 40;
 
-function preload() {
-  // Ensure the .ttf or .otf font stored in the assets directory
-  // is loaded before setup() and draw() are called
-  font = loadFont('assets/SourceSansPro-Regular.otf');
+// this class describes the structure
+// and movements of the brick
+class Brick{
+  constructor(bc, y){
+    this.brickColor = bc;
+    this.yPos = y;
+    this.xPos = 0;
+  }
+
+  // this function creates the brick
+  createBrick(){
+    fill(this.brickColor);
+    rect(this.xPos, this.yPos, 100, 50);
+  }
+
+  // this function sets the speed
+  // of movement of the brick to 1
+  setSpeed(){
+    this.xSpeed = 1;
+  }
+
+  // this function sets the bricks in motion
+  moveBrick(){
+    this.xPos+=this.xSpeed;
+    if(this.xPos+100 >= width || this.xPos <= 0){
+      this.xSpeed*=-1;
+    }
+  }
 }
 
 function setup() {
-  createCanvas(710, 400);
+  createCanvas(720, 400);
 
-  // Set text characteristics
-  textFont(font);
-  textSize(fontsize);
-  textAlign(CENTER, CENTER);
 }
 
-function draw() {
-  background(160);
+// creating two bricks of 
+// colors white and black
+let brick1 = new Brick("white",100);
+let brick2 = new Brick("black",250);
 
-  // Align the text to the right
-  // and run drawWords() in the left third of the canvas
-  textAlign(RIGHT);
-  drawWords(width * 0.25);
+// This function sets speed of
+// brick 1 and brick2 to 1.
+brick1.setSpeed();
+brick2.setSpeed();
 
-  // Align the text in the center
-  // and run drawWords() in the middle of the canvas
-  textAlign(CENTER);
-  drawWords(width * 0.5);
-
-  // Align the text to the left
-  // and run drawWords() in the right third of the canvas
-  textAlign(LEFT);
-  drawWords(width * 0.75);
+function draw () {
+  background(0);
+  if(mouseIsPressed){
+    background(50);
+  }
+  brick1.createBrick();
+  brick1.moveBrick();
+  if(!mouseIsPressed){
+    createBars();
+  }
+  brick2.createBrick();
+  brick2.moveBrick();
 }
 
-function drawWords(x) {
-  // The text() function needs three parameters:
-  // the text to draw, the horizontal position,
-  // and the vertical position
-  fill(0);
-  text('ichi', x, 80);
-
-  fill(65);
-  text('ni', x, 150);
-
-  fill(190);
-  text('san', x, 220);
-
-  fill(255);
-  text('shi', x, 290);
+// this function creates the black and
+// white bars across the screen
+function createBars() {
+  let len = 12;
+  for(let i = 0;i<width/len;i++){
+    fill("white");
+    if(i%2 === 0)
+    rect(i*len,height,len,-height);
+  }
 }
