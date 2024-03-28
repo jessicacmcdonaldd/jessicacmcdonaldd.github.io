@@ -303,3 +303,6 @@ hr{
     margin-bottom: 10px;
     border: 1.5px solid rgb(38, 3, 54);
 }
+#canvas-container{
+    margin-left: -75px;
+}
