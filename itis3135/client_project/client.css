@@ -80,9 +80,11 @@ h2,h3{
 .courses{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 .courses fieldset{
     padding: 45px;
+    background-color: rgb(250, 242, 232);
 }
 #uvmee {
     width: 200px;
