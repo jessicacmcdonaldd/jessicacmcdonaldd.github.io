@@ -1,0 +1,129 @@
+body{
+    /* background-image: url('cimages/background_image.jpeg');
+    background-size: cover; */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e1d9d6;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 80px;
+}
+a{
+    text-decoration: none; 
+}
+a:hover{
+    color:aliceblue;
+}
+nav{
+    border: 1.5px #282A2F solid; /*font color called JET not black */
+    display: grid;
+    grid-template-columns: auto max-content;
+}
+nav a{
+    color:#282A2F;
+    font-weight: bold;
+}
+nav img{
+    border-radius: 25px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    grid-column: 1;
+}
+.nav_links{
+    border: 1.5px #282A2F solid;
+    grid-column: 2;
+    text-align: right;
+    align-items:center;
+    align-self: center;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+.home {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: 1px solid #000; 
+    border-radius: 20px;
+}
+.name{
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+    text-align: center;
+}
+.home_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home_info p {
+    font-family: 'Courier New', Courier, monospace;
+    grid-column: 1;
+    padding-left: 100px;
+    text-align: left;
+}
+
+.home_info img {
+    padding-left: 100px;
+    grid-column: 2;
+    justify-self: auto;
+}
+h2,h3{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.courses fieldset{
+    padding: 45px;
+}
+#uvmee {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 20px;
+}
+h1{
+    font-family: "Tangerine", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+    text-align: center;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+.image-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.projects{
+    margin-left: 155px;
+    margin-right: 155px;
+    margin-top: 15px;
+    background-color: rgb(250, 242, 232);
+}
+
+
+footer{
+    text-align: center;
+    color:#282A2F;
+
+}
+footer a{
+    color: #5e65b1;
+}

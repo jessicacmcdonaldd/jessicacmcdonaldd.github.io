@@ -276,10 +276,10 @@ hr{
     align-items: center;
     justify-content: center;
 }
-.buttons{
+.buttons {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .buttons button{
