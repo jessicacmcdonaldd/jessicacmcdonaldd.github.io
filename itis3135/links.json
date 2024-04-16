@@ -1,0 +1,8 @@
+[
+    {
+        "name": "Header", "url": "components/header.html"
+    },
+    {
+        "name": "Footer", "url": "components/footer.html"
+    }
+]
