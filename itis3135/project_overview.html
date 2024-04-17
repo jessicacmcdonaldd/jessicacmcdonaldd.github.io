@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        <div data-include="components/header.html"></div>
+        <!-- <div data-include="components/header.html"></div> -->
+        <div id="header-container"></div>
     </header>
     <main class="outline">
         <h1 class="outline_header">Client Project Outline</h1>
@@ -80,7 +81,7 @@
             <p>Exerpience</p>
             <ul>
                 <li>
-                    The exoerience page will let people read more in depth about what software experience she has and what classes she's used them in and any other small things that yu would not normally
+                    The experience page will let people read more in depth about what software experience she has and what classes she's used them in and any other small things that yu would not normally
                     list on a resume. This page may also include soft skills and any clubs or other activities she's gained them through. It may also include any talks or events she's gone to and how these affected
                     her and what she learned or how she participated.
                 </li>
@@ -102,12 +103,14 @@
         </section>
     </main>
     <footer>
-        <div data-include="components/footer.html"></div>
+        <!-- <div data-include="components/footer.html"></div> -->
+        <div id="footer-container"></div>
     </footer>
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
-    <script src="scripts/HTMLInclude.min.js"></script>
+    <!-- <script src="scripts/HTMLInclude.min.js"></script> -->
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
