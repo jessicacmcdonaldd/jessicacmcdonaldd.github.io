@@ -306,3 +306,12 @@ hr{
 #canvas-container{
     margin-left: -75px;
 }
+.reviews {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.websiteimage{
+    width: 75%;
+}
