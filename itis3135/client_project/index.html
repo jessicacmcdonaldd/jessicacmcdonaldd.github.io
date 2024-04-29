@@ -8,8 +8,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     </head>
 <body onload = "jump('home')">
+    
 <header>
     <nav>
         <figure class="logo"> 
@@ -36,8 +38,15 @@
         Kendyll Bache
         </h1>
         <div class="home_info">
+            <img src="cimages/kendylle.png" alt="Kendyll Bache" style="width: 400px; height:400px;">
             <p>Electrical Engineering Student at University of  Vermont. Currently a Sophomore planning to graduate in the Spring of 2026.</p>
-            <img src="cimages/kendylle.png" alt="Kendyll Bache" style="width: 200px; height:200px;">
+            <div class="image-container">
+                <figure>
+                    <img src="cimages/uvm1.jpg" alt="UVM" class="zoom-image" id="zoomImg" style="width:400px; height:300px;">
+                    <figcaption><strong>University of Vermont</strong></figcaption>
+                    <figcaption style="font-size: 10px;">Click on image to enlarge it!</figcaption>
+                </figure>
+            </div>
         </div>
     </section>
     <section id="experience">
@@ -91,7 +100,11 @@
             </ul>
         </fieldset>            
         </div>
-        <img src="cimages/UVM_EE.png" alt="UVM Electrical Engineering" id="uvmee"> 
+        <img src="cimages/UVM_EE.png" alt="UVM Electrical Engineering" id="uvmee">
+        <div class="confetti_container">
+            <canvas id="confetti"></canvas>
+            <button id="button" role="button">Click me for surpise!</button>
+        </div>
     </section>
     <section id="projects">
         <fieldset class="home">
@@ -148,11 +161,17 @@
                 </li>
             </ul>
         </fieldset>
+            <p style="text-align: center; color: #4b6935;">Use arrows to scroll through projects!</p>
+            <div class="slideshow-arrow prev" onclick="plusSlides(-1)">&#10094;</div>
+            <div class="slideshow-arrow next" onclick="plusSlides(1)">&#10095;</div>
     </section>
     <section id="resume">
         <h1>
             Resume
         </h1>
+            <div class="download_container">
+                <a class="download" href="cimages/kendyll_bache_resume.pdf" download>Download Resume (PDF)</a>
+            </div>
         <img class="resume" src="cimages/0001.jpg" alt="resume page 1">
         <img class="resume" src="cimages/0002.jpg" alt="resume page 2">
     </section>
@@ -199,6 +218,8 @@
     document.getElementById("validation_link_wcag").setAttribute("href", "https://wave.webaim.org/report#/" + location.href);
 </script>
 </footer>
-<script src="client.js"></script>
+    <script src="client.js"></script>
+
+
 </body>
 </html>
