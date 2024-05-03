@@ -7,6 +7,7 @@ body{
     margin-bottom: 5px;
     margin-left: 50px;
     margin-right: 80px;
+    color: #282A2F /*font color called JET not black */
 }
 a{
     text-decoration: none; 
@@ -18,6 +19,7 @@ nav{
     border: 1.5px #282A2F solid; /*font color called JET not black */
     display: grid;
     grid-template-columns: auto max-content;
+    background-color: #c9c8c8;
 }
 nav a{
     color:#282A2F;
@@ -41,14 +43,14 @@ nav img{
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
 }
-.home {
+/* .home {
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
     margin-top: 5px;
     padding: 5px 10px;
     border: 1px solid #000; 
-    /* border-radius: 20px;*/
-} 
+
+}  */
 .name{
     font-family: "Tangerine", cursive;
     font-weight: 400;
@@ -65,8 +67,8 @@ nav img{
     font-family: 'Courier New', Courier, monospace;
     grid-column: 2;
     grid-row: 1;
-    padding-right: 100px;
-    text-align: left;
+    /* padding-right: 100px; */
+    padding: 0 10%;
 }
 
 .home_info img {
@@ -92,8 +94,8 @@ h2,h3{
     background-color: rgb(250, 242, 232);
 }
 #uvmee {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -169,20 +171,20 @@ figcaption{
 .slideshow-arrow {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
+    border-radius: 75%;
     font-size: 24px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    /* border-radius: 5px; */
+    background-color: rgba(93, 176, 108, 0.329);
+    border: 1px solid  #282A2F;
 }
 
 .prev {
-    left: 150px;
+    left: 220px;
 }
 
 .next {
-    right: 180px;
+    right: 250px;
 }
 .download{
     text-align: center;
@@ -226,5 +228,32 @@ button:hover {
     width: 100%; 
     height: 100%; 
     z-index: 1;
+}
+
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    main{
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+        font-size: 16px;
+    }
+}
+
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    main{
+        width: 80%;
+        margin: 0 auto;
+        max-width: 800px;
+        font-size: 18px;
+    }
+}
+
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    main{
+        width: 90%;
+        margin: 0 auto;
+        max-width: 500px;
+        font-size: 20px;
+    }
 }
 

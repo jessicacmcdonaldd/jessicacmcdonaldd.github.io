@@ -62,21 +62,27 @@ function showSlide(n) {
 document.addEventListener('DOMContentLoaded', () => {
     const popupButton = document.getElementById('popupButton');
 
-    // Function to handle button click event
     const openPopup = () => {
-        const popupMessage = 'Click here for UVM course list'; // Message to display in popup
+        const popupMessage = 'Click below for UVM course list!';
 
-        // Open a new popup window with custom content
-        const popupWindow = window.open('', '_blank', 'width=400,height=200');
-        
-        // Write custom content (message) to the popup window
+        const popupWindow = window.open('', '_blank', 'width=800,height=600');
+
         if (popupWindow) {
             popupWindow.document.write(`
                 <html>
+                <style>
+                    a{
+                        // text-decoration: none; 
+                        color: 	yellow;
+                    }
+                    a:hover{
+                        color: #FAF9F6;
+                    }
+                </style>
                 <head>
-                    <title>Popup</title>
+                    <title>UVM Electrical Engineering Course List Link</title>
                 </head>
-                <body style="text-align: center; font-family: Arial, sans-serif;">
+                <body style="text-align: center; font-family: Arial, sans-serif; background-color: #1E3F20; color: 	#FAF9F6";>
                     <h2>${popupMessage}</h2>
                     <p><a href="https://catalogue.uvm.edu/undergraduate/courses/courselist/ee/">UVM Electrical ENGR Course List</p>
                 </body>
@@ -87,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Add click event listener to the button
     popupButton.addEventListener('click', openPopup);
 });
 
