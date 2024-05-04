@@ -11,12 +11,16 @@ function jump(id) {
 
 //make image bigger js
 document.addEventListener('DOMContentLoaded', function() {
-    const zoomImage = document.getElementById('zoomImg');
+    
+    const zoomableImages = document.querySelectorAll('.zoom-image');
 
-    zoomImage.addEventListener('click', function() {
-        zoomImage.classList.toggle('zoomed');
+    zoomableImages.forEach(function(zoomImage) {
+        zoomImage.addEventListener('click', function() {
+            zoomImage.classList.toggle('zoomed');
+        });
     });
 });
+
 
 //slideshow
 let slideIndex = 1;
